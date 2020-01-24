@@ -2,6 +2,8 @@
 
 The MediaWiki Extension allows you to search for the shortest connection between two articles of the Wiki project. It uses the Dijkstra algorithm.
 
+__Tested with MediaWiki 1.28, 1.29, 1.30, 1.31__
+
 ## Introduction
 
 To find the shortest route between all the links in the wiki project, the extension uses the Dijkstra algorithm. To do this, only start and target articles must be entered in a form. You can also activate the reverse search, in which case the algorithm will also try to link from the target to the start article.
