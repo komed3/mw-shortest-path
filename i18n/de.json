@@ -1,0 +1,22 @@
+{
+	"shortestwikipath": "Verlinkungssuche zwischen Artikeln",
+	"shortestwikipath-extension-desc": "Ergänzt eine Spezialseite zur Berechnung des kürzesten Weges zwischen zwei Artikeln.",
+	"shortestwikipath-summary": "Ich helfe dir bei der Suche nach dem kürzesten Weg zwischen zwei Artikeln.\n\nZurzeit besitzt die {{SITENAME}} insgesamt [[Spezial:Alle Seiten|{{formatnum:{{NUMBEROFARTICLES}}}} Artikel]], zwischen denen Links bestehen. Um zwischen all den Verlinkungen die kürzeste Strecke zu finden, nutze ich den [[wikipedia:de:Dijkstra-Algorithmus|Dijkstra-Algorithmus]]. Gebe Start- und Zielartikel in unten stehendes Formular und drücke anschließend auf „$1“. Gerne kannst du auch die $2, dann werde ich versuchen, ebenfalls vom Ziel- zum Ausgangsartikel zu verlinken.",
+	"shortestwikipath-form": "Suche starten",
+	"shortestwikipath-form-from": "Startartikel",
+	"shortestwikipath-form-to": "Zielartikel",
+	"shortestwikipath-form-backward": "Rückwärtssuche aktivieren",
+	"shortestwikipath-form-submit": "Suchen",
+	"shortestwikipath-error-from": "<span class=\"error\">Achtung: Die von dir angegebene Startseite „$1“ exisitiert nicht!</span>",
+	"shortestwikipath-error-to": "<span class=\"error\">Achtung: Die von dir angegebene Zielseite „$1“ exisitiert nicht!</span>",
+	"shortestwikipath-error-both": "<span class=\"error\">Achtung: Die von dir angegebenen Seiten „$1“ und „$2“ exisitieren nicht!</span>",
+	"shortestwikipath-result": "Ergebnis",
+	"shortestwikipath-result-backward": "Ergebnis der Rückwärtssuche",
+	"shortestwikipath-no-way": "<span class=\"error\">Achtung: Ich konnte zwischen „[[$1]]“ und „[[$2]]“ keine Verbindung herstellen.</span>",
+	"shortestwikipath-self-linking": "<span class=\"error\">Achtung: Die angegebenen Seiten „[[$1]]“ und „[[$2]]“ sind identisch.</span>",
+	"shortestwikipath-forward": "Ich habe {{#ifeq:$5|1|'''eine Direktverbindung|folgenden kürzesten Weg mit '''{{formatnum:$5}}&nbsp;Sprüngen}}''' zwischen „[[$1]]“ und „[[$2]]“ gefunden:",
+	"shortestwikipath-result-start": "Start",
+	"shortestwikipath-result-hop": "&#35;{{#expr: $1 - 1}}",
+	"shortestwikipath-result-target": "Ziel",
+	"shortestwikipath-duration": "<span class=\"shortestwikipath-duration\">Für die Suche habe ich {{formatnum:$3}}&nbsp;Knoten und {{formatnum:$4}}&nbsp;Kanten in {{formatnum:$2}}&nbsp;Berechnungen in {{formatnum:$1}}&nbsp;Sekunden analysiert.</span>"
+}

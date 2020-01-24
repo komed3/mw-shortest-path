@@ -1,0 +1,22 @@
+{
+	"shortestwikipath": "Link search between articles",
+	"shortestwikipath-extension-desc": "Adds a special page to calculate the shortest path between two articles.",
+	"shortestwikipath-summary": "I will help you find the shortest way between two articles.\n\nCurrently, the {{SITENAME}} has a total of [[Special:All Pages|{{formatnum:{{NUMBEROFARTICLES}}}} articles]] that have links between them. To find the shortest route between all the links, I use the [[wikipedia:en:Dijkstra's algorithm|Dijkstra algorithm]]. Enter the start and finish article in the form below and press “$1”. You can also $2, then I will try to also link from the target to the original article.",
+	"shortestwikipath-form": "Start search",
+	"shortestwikipath-form-from": "Start page",
+	"shortestwikipath-form-to": "Target page",
+	"shortestwikipath-form-backward": "activate the reverse search",
+	"shortestwikipath-form-submit": "Search",
+	"shortestwikipath-error-from": "<span class=\"error\">Attention: The given start page “$1” does not exist!</span>",
+	"shortestwikipath-error-to": "<span class=\"error\">Attention: The given target page “$1” does not exist!</span>",
+	"shortestwikipath-error-both": "<span class=\"error\">Attention: The given pages “$1” and “$2” does not exist!</span>",
+	"shortestwikipath-result": "Result",
+	"shortestwikipath-result-backward": "Result of the reverse search",
+	"shortestwikipath-no-way": "<span class=\"error\">Attention: I could not connect between “[[$1]]” and “[[$2]]”.</span>",
+	"shortestwikipath-self-linking": "<span class=\"error\">Attention: The specified pages  „[[$1]]“ and „[[$2]]“ are identical.</span>",
+	"shortestwikipath-forward": "I have found {{#ifeq:$5|1|'''a direct connection|following shortest path with '''{{formatnum:$5}}&nbsp;hops}}''' between „[[$1]]“ and „[[$2]]“:",
+	"shortestwikipath-result-start": "Start",
+	"shortestwikipath-result-hop": "&#35;{{#expr: $1 - 1}}",
+	"shortestwikipath-result-target": "Target",
+	"shortestwikipath-duration": "<span class=\"shortestwikipath-duration\">For the search, I analyzed {{formatnum:$3}}&nbsp;nodes and {{formatnum:$4}}&nbsp;edges in {{formatnum:$2}}&nbsp;calculations in {{formatnum:$1}}&nbsp;seconds.</span>"
+}

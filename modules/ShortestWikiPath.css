@@ -1,0 +1,147 @@
+﻿/*
+ * ShortestWikiPath.css
+ * 
+ * author		komed3
+ * version		1.0.0
+ * date			2018-08-03
+ * modified		2018-08-03
+ * license		MIT
+ * 
+ */
+
+.shortestwikipath-result-wrapper {
+	margin: 1em 0;
+	border: 1px solid #a2a9b1;
+    border-radius: 2px;
+	padding: 1.25em;
+}
+
+.shortestwikipath-result-wrapper .headline {
+	margin-bottom: 0.6em;
+    font-size: 1.0925em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.shortestwikipath-result-wrapper .error {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #FFF5F5;
+}
+
+.shortestwikipath-result-wrapper table {
+	margin: 1.5em 1.5em 0 1.5em;
+}
+
+.shortestwikipath-result-wrapper table tr td.node {
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	font-size: 1px;
+	background-color: #EEEEEE;
+	border: 4px solid #000000;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform 0.25s;
+}
+
+.shortestwikipath-result-wrapper table tr:hover td.node {
+	transform: scale(1.15);
+}
+
+.shortestwikipath-result-wrapper table tr td.label {
+	padding: 0 20px;
+}
+
+.shortestwikipath-result-wrapper table tr td.label-type {
+	font-size: 18px;
+	color: #CCCCCC;
+}
+
+.shortestwikipath-result-wrapper table tr td.label-node {
+	padding-bottom: 1.2em;
+	vertical-align: top;
+}
+
+.shortestwikipath-result-wrapper table tr:not(.target) td.edge {
+	border-right: 4px solid #000000;
+}
+
+/* COLORS */
+
+.shortestwikipath-result-wrapper table tr.start td.node {
+	background-color: #ffffff;
+	border-color: #5a8ace;
+}
+
+.shortestwikipath-result-wrapper table tr.hop td.node {
+	background-color: #ffffff;
+	border-color: #5acace;
+}
+
+.shortestwikipath-result-wrapper table tr.target td.node {
+	background-color: #ffffff;
+	border-color: #5ace69;
+}
+
+.shortestwikipath-result-wrapper table tr.start td.edge {
+	border-color: #5a8ace;
+}
+
+.shortestwikipath-result-wrapper table tr.hop td.edge {
+	border-color: #5acace;
+}
+
+.shortestwikipath-result-wrapper table tr.target td.edge {
+	border-color: #5ace69;
+}
+
+.shortestwikipath-result-wrapper table tr.start.nhop td.edge {
+	border-width: 0 4px 0 0;
+    border-style: solid;
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#5a8ace), to(#5acace)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#5a8ace, #5acace) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#5a8ace, #5acace) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#5a8ace, #5acace) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #5a8ace, #5acace) 1 100%;
+}
+
+.shortestwikipath-result-wrapper table tr.start.ntarget td.edge {
+	border-width: 0 4px 0 0;
+    border-style: solid;
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#5a8ace), to(#5ace69)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#5a8ace, #5ace69) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#5a8ace, #5ace69) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#5a8ace, #5ace69) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #5a8ace, #5ace69) 1 100%;
+}
+
+.shortestwikipath-result-wrapper table tr.hop.ntarget td.edge {
+	border-width: 0 4px 0 0;
+    border-style: solid;
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#5acace), to(#5ace69)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#5acace, #5ace69) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#5acace, #5ace69) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#5acace, #5ace69) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #5acace, #5ace69) 1 100%;
+}
+
+.shortestwikipath-duration {
+	font-size: 0.8em;
+	color: #888888;
+}

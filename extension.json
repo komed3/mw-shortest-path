@@ -1,0 +1,26 @@
+{
+	"name": "ShortestWikiPath",
+	"version": "1.0.0",
+	"author": [
+		"[https://komed3.de/ Paul Köhler]"
+	],
+	"url": "https://labs.komed3.de/shortestwikipath/",
+	"descriptionmsg": "shortestwikipath-extension-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"MessagesDirs": {
+		"ShortestWikiPath": [
+			"i18n"
+		]
+	},
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
+	"AutoloadClasses": {
+		"SpecialShortestWikiPath": "SpecialShortestWikiPath.php"
+	},
+	"SpecialPages": {
+		"ShortestWikiPath": "SpecialShortestWikiPath"
+	},
+	"manifest_version": 1
+}
